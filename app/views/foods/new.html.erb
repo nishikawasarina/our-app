@@ -1,0 +1,26 @@
+<div class="create-food">
+  <div class="create-food__form">
+    <h3 class = "form-title">
+      <script>
+        //今日の日付データを変数に格納
+        //変数は"today"とする
+        var today=new Date(); 
+        //年・月・日・曜日を取得
+        var year = today.getFullYear();
+        var month = today.getMonth()+1;
+        var week = today.getDay();
+        var day = today.getDate();
+
+        var week_ja= new Array("日","月","火","水","木","金","土");
+
+        //年・月・日・曜日を書き出す
+        document.write(year+"年"+month+"月"+day+"日 "+week_ja[week]+"曜日/食事の記録");
+      </script>
+    </h3>
+    <%= form_with(model: @food, local: true, url: foods_path) do |form| %>
+      <%= form.text_field :name, placeholder: "食べたもの" , rows: "10", id: "text", class: "text" %>
+      <%= form.text_field :image, placeholder: "Image Url", id: "image", class: "image" %>
+      <%= form.submit "保存", class: "btn" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #D2B48C;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .fa-bars {
+    color: white;
+    line-height: 50px;
+    padding-right: 20px;
+  }
+}
+
+.contents {
+  width: 100%;
+  height: calc(100% - 50px);
+  .content-title {
+    width: 100%;
+    .content-name {
+    text-align: center;
+    color: #8B4513;
+    font-size: 40px;
+    .fa-camera-retro {
+      margin-left: 30px;
+      color: coral;
+    }
+    }
+  }
+  
+  .calender {
+    width: 100%;
+    color: gray;
+    .calendar-title {
+      text-align: center;
+      font-size: 30px;
+    }
+    .calendar-table {
+      margin: 0 auto;
+      font-size: 40px;
+      .is-today {
+        color: rgb(51, 51, 51);
+        background-color: rgb(250, 160, 95);
+      }
+      th {
+        padding: 5px 30px 15px 30px;
+        border: 1px solid #D2B48C;
+        background-color: rgb(252, 241, 227);
+      }
+      td {
+        width: 20px;
+        height: 20px;
+        // line-height: 20px;
+        text-align: center;
+        padding-bottom: 40px;
+        border: 1px solid #D2B48C;
+      }
+    }
+  } 
+}
+
+
+// newのビュー
+.create-food {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 195, 173);
+  padding: 300px 100px 400px 300px;
+  // border: 1px solid cornsilk;
+  .create-food__form {
+
+    .form-title {
+      color: rgba(124, 124, 124, 0.712);
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .text, .image {
+      height: 50px;
+      background-color: rgb(255, 230, 198);
+      border: none;
+    }
+    .btn {
+      height: 50px;
+      width: 100px;
+      background-color: chocolate;
+      border: none;
+      color: white;
+    }
+  }
+}

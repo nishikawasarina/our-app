@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OurApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <script type="text/javascript" src="../../javascript/foods.js"><> %>
+  </head>
+
+  <body>
+    <div class = "header">
+      <h1>糖尿病サポートくん</h1>
+      <i class="fas fa-bars"></i>
+    </div>
+    <%= yield %>
+  </body>
+</html>
